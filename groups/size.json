@@ -1,0 +1,42 @@
+{
+  "info": {
+    "name": "size",
+    "description": "product sizes"
+  },
+  "connection": "default",
+  "collectionName": "groups_sizes",
+  "attributes": {
+    "size": {
+      "required": true,
+      "unique": false,
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "Capsules",
+        "Tablets",
+        "CoatedTablets",
+        "ChewableTablets",
+        "Gummies",
+        "SoftGels",
+        "Grams",
+        "lb"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sku": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "vendorSku": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "ingredient",
+    "description": "ingredients, amounts and daily values for a product"
+  },
+  "connection": "default",
+  "collectionName": "groups_ingredients",
+  "attributes": {
+    "ingredient": {
+      "required": true,
+      "unique": false,
+      "type": "string"
+    },
+    "amount": {
+      "required": true,
+      "type": "string"
+    },
+    "dailyValue": {
+      "required": true,
+      "default": "*",
+      "type": "string"
+    }
+  }
+}

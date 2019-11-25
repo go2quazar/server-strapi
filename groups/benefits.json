@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Benefits",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_benefits",
+  "attributes": {
+    "title": {
+      "required": true,
+      "unique": false,
+      "type": "string"
+    },
+    "info": {
+      "required": true,
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "iconImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

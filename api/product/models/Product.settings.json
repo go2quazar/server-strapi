@@ -1,0 +1,78 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "suggestedUse": {
+      "required": true,
+      "type": "text"
+    },
+    "caution": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "servingSize": {
+      "required": true,
+      "type": "string"
+    },
+    "ingredients": {
+      "group": "ingredient",
+      "required": true,
+      "type": "group",
+      "repeatable": true
+    },
+    "Sizes": {
+      "group": "size",
+      "required": true,
+      "repeatable": true,
+      "type": "group"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "otherIngredients": {
+      "required": true,
+      "type": "string"
+    },
+    "Categories": {
+      "group": "category",
+      "required": true,
+      "type": "group",
+      "repeatable": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "benefitImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Benefits": {
+      "group": "benefits",
+      "repeatable": true,
+      "type": "group"
+    }
+  }
+}
