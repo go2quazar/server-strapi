@@ -15,12 +15,17 @@
       "enum": [
         "Capsules",
         "Tablets",
+        "VCapsules",
         "CoatedTablets",
         "ChewableTablets",
         "Gummies",
         "SoftGels",
         "Grams",
-        "lb"
+        "lb",
+        "Packets",
+        "LiquidCapsules",
+        "Oz",
+        "ChewableTablet"
       ],
       "required": true,
       "type": "enumeration"
